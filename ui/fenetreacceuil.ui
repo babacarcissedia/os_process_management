@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetreAcceuil</class>
+ <widget class="QMainWindow" name="FenetreAcceuil">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FenetreAcceuil</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProcessus">
+    <property name="title">
+     <string>Processus</string>
+    </property>
+    <addaction name="actionAjouter"/>
+   </widget>
+   <widget class="QMenu" name="menuAlgorithme">
+    <property name="title">
+     <string>Ordonnancement</string>
+    </property>
+    <widget class="QMenu" name="menuChoisir_Methode">
+     <property name="title">
+      <string>Choisir Methode</string>
+     </property>
+     <addaction name="actionFCFS"/>
+     <addaction name="actionPCTE"/>
+     <addaction name="actionPCTER"/>
+     <addaction name="actionTourniquet"/>
+     <addaction name="actionTourniquet_Avec_Priorit"/>
+    </widget>
+    <addaction name="menuChoisir_Methode"/>
+    <addaction name="actionOrdonnanceur"/>
+   </widget>
+   <addaction name="menuProcessus"/>
+   <addaction name="menuAlgorithme"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAjouter"/>
+   <addaction name="actionOrdonnanceur"/>
+   <addaction name="actionGantt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAjouter">
+   <property name="text">
+    <string>New process</string>
+   </property>
+  </action>
+  <action name="actionFCFS">
+   <property name="text">
+    <string>FCFS</string>
+   </property>
+  </action>
+  <action name="actionPCTE">
+   <property name="text">
+    <string>PCTE</string>
+   </property>
+  </action>
+  <action name="actionPCTER">
+   <property name="text">
+    <string>PCTER</string>
+   </property>
+  </action>
+  <action name="actionTourniquet">
+   <property name="text">
+    <string>Tourniquet</string>
+   </property>
+  </action>
+  <action name="actionTourniquet_Avec_Priorit">
+   <property name="text">
+    <string>Tourniquet Avec Priorité</string>
+   </property>
+  </action>
+  <action name="actionOrdonnanceur">
+   <property name="text">
+    <string>Ordonnanceur</string>
+   </property>
+  </action>
+  <action name="actionGantt">
+   <property name="text">
+    <string>Gantt</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
