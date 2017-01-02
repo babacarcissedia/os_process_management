@@ -1,4 +1,4 @@
-#include "fenetreacceuil.h"
+#include <fenetre_acceuil.h>
 #include <QApplication>
 
 int main(int argc, char *argv[])
